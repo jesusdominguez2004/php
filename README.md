@@ -2,8 +2,8 @@
 
 Creador: Jesús Alberto Domínguez Charris
 
-. Guías de aprendizaje
+- Guías de aprendizaje
 
-. Pruebas personales
+- Pruebas personales
 
-. W3Schools Learning
+- W3Schools Learning
