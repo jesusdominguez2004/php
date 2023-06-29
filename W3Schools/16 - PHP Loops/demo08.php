@@ -22,7 +22,6 @@
         echo "The number is: $x <br>";
         $x++;
     }
-
 ?>
 
 </body>
