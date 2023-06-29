@@ -2,7 +2,7 @@
 
 Creador: Jesús Alberto Domínguez Charris
 
-- Guías de aprendizaje
+- Guías de aprendizaje (Pendiente...)
 
 - Pruebas personales
 
