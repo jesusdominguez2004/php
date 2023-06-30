@@ -8,7 +8,7 @@
         return $a + $b;
     }
 
-    echo addNumbers(5, "5 days"); // Fatal error
+    echo addNumbers(5, "5");
 ?>
 
 </body>
