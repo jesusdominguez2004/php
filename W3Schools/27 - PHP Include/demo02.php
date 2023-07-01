@@ -10,18 +10,23 @@
 </head>
 <body>
 
-<?php 
-    // Get a Time
+<div class="menu">
+<?php
     /*
-        H - 24-hour format of an hour (00 to 23)
-        h - 12-hour format of an hour with leading zeros (01 to 12)
-        i - Minutes with leading zeros (00 to 59)
-        s - Seconds with leading zeros (00 to 59)
-        a - Lowercase Ante meridiem and Post meridiem (am or pm)
+        PHP include and require Statements
+        require will produce a fatal error (E_COMPILE_ERROR) and stop the script
+        include will only produce a warning (E_WARNING) and the script will continue
+    
+        include 'filename';
+        require 'filename'
     */
-    echo "The time is " . date("h:i:s a") . "<br>";
-    echo "Note that the PHP date() function will return the current date/time of the server!";
+    include 'menu.php';
 ?>
+</div>
+
+<h1>Welcome to my home page!</h1>
+<p>Some text.</p>
+<p>Some more text.</p>
 
 </body>
 </html>

@@ -10,11 +10,11 @@
 </head>
 <body>
 
-<?php 
-    // Create a Date With mktime()
-    // Syntax: mktime(hour, minute, second, month, day, year);
-    $d = mktime(11, 14, 54, 8, 12, 2014);
-    echo "Created date is " . date("Y-m-d h:i:s a", $d);
+<h1>Welcome to my home page!</h1>
+<?php
+    // PHP include vs. require
+    include 'noFileExists.php';
+    echo "I have a $color $car.";
 ?>
 
 </body>

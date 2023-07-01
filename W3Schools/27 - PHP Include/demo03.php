@@ -10,27 +10,18 @@
 </head>
 <body>
 
+<h1>Welcome to my home page!</h1>
 <?php 
-    // Get a Time
     /*
-        H - 24-hour format of an hour (00 to 23)
-        h - 12-hour format of an hour with leading zeros (01 to 12)
-        i - Minutes with leading zeros (00 to 59)
-        s - Seconds with leading zeros (00 to 59)
-        a - Lowercase Ante meridiem and Post meridiem (am or pm)
-
-        If the time you got back from the code is not correct, 
-        it's probably because your server is in another country or set up for a different timezone.
-
-        So, if you need the time to be correct according to a specific location, you can set the timezone you want to use.
+        PHP include and require Statements
+        require will produce a fatal error (E_COMPILE_ERROR) and stop the script
+        include will only produce a warning (E_WARNING) and the script will continue
+    
+        include 'filename';
+        require 'filename'
     */
-    date_default_timezone_set("America/New_York");
-    echo "The time is " . date("h:i:s a") . "<br>";
-    echo "America/New_York time!";
-
-    // Extra...
-    // $timezone = date_default_timezone_get();
-    // var_dump($timezone);
+    include 'vars.php';
+    echo "I have a $color $car.";
 ?>
 
 </body>

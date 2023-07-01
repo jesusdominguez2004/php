@@ -10,21 +10,19 @@
 </head>
 <body>
 
+<h1>Welcome to my home page!</h1>
+<p>Some text.</p>
+<p>Some more text.</p>
 <?php 
-    // Get a Date
+    // PHP include and require Statements
     /*
-        d - Represents the day of the month (01 to 31)
-        m - Represents a month (01 to 12)
-        Y - Represents a year (in four digits)
-        l (lowercase 'L') - Represents the day of the week
+    require will produce a fatal error (E_COMPILE_ERROR) and stop the script
+    include will only produce a warning (E_WARNING) and the script will continue
+    
+    include 'filename';
+    require 'filename'
     */
-    echo "Today is " . date("Y/m/d") . "<br>";
-    echo "Today is " . date("Y.m.d") . "<br>";
-    echo "Today is " . date("Y-m-d") . "<br>";
-    echo "Today is " . date("l") . "<br>";
-
-    // Tip: Automatic Copyright Year
-    echo "&copy 2010-" . date("Y");
+    include 'footer.php';
 ?>
 
 </body>
