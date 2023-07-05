@@ -5,9 +5,12 @@ Preguntas:
 ¿Cómo recorrer con un for un array multidimensional?
 ¿Cómo mostrar ASCII characters?
 
-
-
 Por hacer:
 Ejercicios bases de datos PHP CEF
 Ejercicios del libro de la Librería Nacional
 Ciclo para mostrar all ASCII characters  0, 1, 2, 3, ... n
+Pruebas\Array to string:
+    Arrays to string en for
+    Arrays to string en foreach
+    Arrays multimencional to string en for
+    Arrays multimencional to string en foreach
