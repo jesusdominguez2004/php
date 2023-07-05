@@ -11,21 +11,15 @@
 <body>
 
 <?php 
-    // Sanitize and Validate a URL
-    $url = "https://www.w3schools.com";
+    // Remove Characters With ASCII Value > 127
+    $str = "<h1>Hello WorldÆØÅ!</h1>";
+    
+    $newstr = filter_var($str, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    echo $newstr;
 
-    // Remove all illegal characters from url... SANITIZE
-    $url = filter_var($url, FILTER_SANITIZE_URL);
-
-    // Validate URL... VALIDATE
-    if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
-        echo("$url is a valid URL");
-    } else {
-        echo("$url is not a valid URL");
-    }
-    /*
-        FILTER_SANITIZE_URL -> 518
-        FILTER_VALIDATE_URL -> 273
+    /*  
+        FILTER_SANITIZE_STRING -> 513
+        FILTER_FLAG_STRIP_HIGH -> 8
         En vez de usar directamente el ID del filtro
         Usamos una constante que tiene como valor su int ID...
         filter_var(...) -> Filters a variable with a specified filter.

@@ -11,21 +11,18 @@
 <body>
 
 <?php 
-    // Sanitize and Validate a URL
+    // Validate URL - Must Contain QueryString
     $url = "https://www.w3schools.com";
-
-    // Remove all illegal characters from url... SANITIZE
-    $url = filter_var($url, FILTER_SANITIZE_URL);
-
-    // Validate URL... VALIDATE
-    if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
-        echo("$url is a valid URL");
+    
+    if (!filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRED) === false) {
+        echo("$url is a valid URL with a query string");
     } else {
-        echo("$url is not a valid URL");
+        echo("$url is not a valid URL with a query string");
     }
-    /*
-        FILTER_SANITIZE_URL -> 518
+
+    /*  
         FILTER_VALIDATE_URL -> 273
+        FILTER_FLAG_QUERY_REQUIRED -> 524288
         En vez de usar directamente el ID del filtro
         Usamos una constante que tiene como valor su int ID...
         filter_var(...) -> Filters a variable with a specified filter.

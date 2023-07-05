@@ -1,0 +1,13 @@
+Preguntas:
+¿Cómo convertir un array a string?
+¿Funcionan los "[]" para crear arrays?
+¿Cómo recorrer con un foreach un array multidimensional?
+¿Cómo recorrer con un for un array multidimensional?
+¿Cómo mostrar ASCII characters?
+
+
+
+Por hacer:
+Ejercicios bases de datos PHP CEF
+Ejercicios del libro de la Librería Nacional
+Ciclo para mostrar all ASCII characters  0, 1, 2, 3, ... n

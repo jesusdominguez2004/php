@@ -11,21 +11,25 @@
 <body>
 
 <?php 
-    // Sanitize and Validate a URL
-    $url = "https://www.w3schools.com";
+    // Validate an Integer Within a Range
+    $int = 122;
+    $min = 1;
+    $max = 200;
 
-    // Remove all illegal characters from url... SANITIZE
-    $url = filter_var($url, FILTER_SANITIZE_URL);
-
-    // Validate URL... VALIDATE
-    if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
-        echo("$url is a valid URL");
+    // validar que es INT + validar rango ente 1 y 200...
+    if (filter_var($int, FILTER_VALIDATE_INT, array("options" => array("min_range" => $min, "max_range" => $max))) === false) {
+        echo("Variable value is not within the legal range");
     } else {
-        echo("$url is not a valid URL");
+        echo("Variable value is within the legal range");
     }
+
+    // Extra...
+    $listaRango = array("options" => array("min_range" => $min, "max_range" => $max));
+    echo "<br>";
+    var_dump($listaRango);
+
     /*
-        FILTER_SANITIZE_URL -> 518
-        FILTER_VALIDATE_URL -> 273
+        FILTER_VALIDATE_INT -> 257
         En vez de usar directamente el ID del filtro
         Usamos una constante que tiene como valor su int ID...
         filter_var(...) -> Filters a variable with a specified filter.

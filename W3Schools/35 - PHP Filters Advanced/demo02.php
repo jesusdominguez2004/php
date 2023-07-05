@@ -11,21 +11,18 @@
 <body>
 
 <?php 
-    // Sanitize and Validate a URL
-    $url = "https://www.w3schools.com";
+    // Validate IPv6 Address
+    $ip = "2001:0db8:85a3:08d3:1319:8a2e:0370:7334";
 
-    // Remove all illegal characters from url... SANITIZE
-    $url = filter_var($url, FILTER_SANITIZE_URL);
-
-    // Validate URL... VALIDATE
-    if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
-        echo("$url is a valid URL");
+    if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) === false) {
+        echo("$ip is a valid IPv6 address");
     } else {
-        echo("$url is not a valid URL");
+        echo("$ip is not a valid IPv6 address");
     }
+
     /*
-        FILTER_SANITIZE_URL -> 518
-        FILTER_VALIDATE_URL -> 273
+        FILTER_VALIDATE_IP -> 275
+        FILTER_FLAG_IPV6 -> 2097152
         En vez de usar directamente el ID del filtro
         Usamos una constante que tiene como valor su int ID...
         filter_var(...) -> Filters a variable with a specified filter.
