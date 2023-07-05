@@ -14,12 +14,12 @@
 <body>
 
 <?php
-    echo "<h2>Array to string | implode(...) | Pruebas</h2>";
-    $frutas = array("manzana", "naranja", "banana");
-    $string = implode(", ", $frutas);
-    echo "String Array frutas: [$string] <br>";
+    echo "<h2>Array to string | json_encode(...)| Pruebas</h2>";
+    $array = array("a" => 1, "b" => 2, "c" => 3);
+    $json = json_encode($array);
+    echo "JSON String Array frutas: $json <br>";
     echo "Var dump Array frutas: ";
-    var_dump($frutas);
+    var_dump($array);
 
     // Tip: Automatic Copyright Year
     echo "<br>";
