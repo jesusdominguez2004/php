@@ -4,6 +4,7 @@ Preguntas:
 ¿Cómo recorrer con un foreach un array multidimensional?
 ¿Cómo recorrer con un for un array multidimensional?
 ¿Cómo mostrar ASCII characters?
+¿Los atributos se pueden definir en el __constructor? (class) R=// Sí, pero es mala prática
 
 Por hacer:
 Ejercicios bases de datos PHP CEF
