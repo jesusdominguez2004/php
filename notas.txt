@@ -5,6 +5,8 @@ Preguntas:
 ¿Cómo recorrer con un for un array multidimensional?
 ¿Cómo mostrar ASCII characters?
 ¿Los atributos se pueden definir en el __constructor? (class) R=// Sí, pero es mala prática
+¿Para qué sirve el self keyword si usamos $this?
+
 
 Por hacer:
 Ejercicios bases de datos PHP CEF
