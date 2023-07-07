@@ -17,6 +17,8 @@ Pruebas\Array to string:
     Arrays to string en foreach
     Arrays multimencional to string en for
     Arrays multimencional to string en foreach
+Hosting para PHP y SQL gratuito:
+    Puede ser 000webhostapp... Ver sus términos y condiciones...
 
 Descubrimientos:
 echo "abc $this -> propiedad"; ERROR
