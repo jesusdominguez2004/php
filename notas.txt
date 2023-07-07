@@ -17,3 +17,8 @@ Pruebas\Array to string:
     Arrays to string en foreach
     Arrays multimencional to string en for
     Arrays multimencional to string en foreach
+
+Descubrimientos:
+echo "abc $this -> propiedad"; ERROR
+    echo "abc $this->propiedad"; OK
+    echo "abc {$this -> propiedad}"; OK
