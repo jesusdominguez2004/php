@@ -9,7 +9,7 @@ Preguntas:
 
 
 Por hacer:
-Ejercicios bases de datos PHP CEF
+Ejercicios bases de datos PHP CEF, pero con Bootstrap 5!
 Ejercicios del libro de la Librería Nacional
 Ciclo para mostrar all ASCII characters  0, 1, 2, 3, ... n
 Pruebas\Array to string:

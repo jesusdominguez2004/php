@@ -2,8 +2,10 @@
 
 Creador: Jesús Alberto Domínguez Charris
 
-- Guías de aprendizaje (Pendiente...)
+- Guías de aprendizaje
 
 - Pruebas personales
 
 - W3Schools Learning
+
+- Ejercicios de libros
